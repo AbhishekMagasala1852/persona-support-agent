@@ -1,0 +1,6 @@
+google-genai
+streamlit
+chromadb
+pypdf
+scikit-learn
+python-dotenv
