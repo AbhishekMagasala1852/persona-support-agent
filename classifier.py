@@ -6,7 +6,6 @@ This file's only job is: look at a customer's message, and decide which
 """
 
 import json
-import os
 import google.generativeai as genai
 import config
 from local_classifier import classify_persona_local
@@ -45,7 +44,7 @@ def classify_customer_persona(user_message: str) -> dict:
     )
 
     try:
-        response = model.generate_content(user_query)
+        response = model.generate_content(user_message)
         
         # Parse the JSON response
         result = json.loads(response.text)
