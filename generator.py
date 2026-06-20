@@ -1,8 +1,8 @@
 """
-generator.py - Fixed version with all imports
+generator.py - Fixed version with standard Google Gemini API
 """
-from google import genai
-from google.genai import types
+import os
+import google.generativeai as genai
 
 import config
 from escalator import generate_handoff_summary
@@ -67,17 +67,20 @@ def generate_adaptive_response(user_query: str, persona: str, context_chunks: li
         f"FACTUAL CONTEXT DOCUMENTS:\n{context_text}"
     )
     
-    client = genai.Client(api_key=config.GEMINI_API_KEY)
+    # Configure the Gemini API
+    genai.configure(api_key=config.GEMINI_API_KEY)
+    
+    # Use the model
+    model = genai.GenerativeModel(
+        model_name=config.GENERATION_MODEL,
+        generation_config={
+            "temperature": 0.2,
+        },
+        system_instruction=full_system_prompt
+    )
     
     try:
-        response = client.models.generate_content(
-            model=config.GENERATION_MODEL,
-            contents=user_query,
-            config=types.GenerateContentConfig(
-                system_instruction=full_system_prompt,
-                temperature=0.2
-            )
-        )
+        response = model.generate_content(user_query)
         
         return {
             "escalated": False,

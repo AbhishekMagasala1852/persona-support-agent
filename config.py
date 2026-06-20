@@ -22,7 +22,8 @@ load_dotenv()
 # -----------------------------------------------------------------------
 # We read the key from the .env file rather than typing it directly here.
 # This keeps your secret key out of the code, which is safer.
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+# Check both possible environment variable names
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY", "")
 
 # -----------------------------------------------------------------------
 # MODEL NAMES
