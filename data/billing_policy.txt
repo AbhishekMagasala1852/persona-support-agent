@@ -1,0 +1,56 @@
+ARTICLE: Understanding Duplicate Charges on Your Statement
+
+Occasionally, a billing statement may display what appears to be a duplicate charge. In most cases, this is one of the following situations rather than an actual double-billing:
+
+1. **Authorization Hold vs. Final Charge**: When you initiate a payment, your bank may show a temporary "authorization hold" for the full amount immediately, and then the final settled charge appears 1-3 business days later. During this window, it can look like two charges, but the hold will disappear automatically and only the final charge remains.
+2. **Failed Payment Retry**: If a payment initially failed due to a temporary card issue (such as an expired card or insufficient funds at that exact moment) and was automatically retried and succeeded, your statement may briefly show both the failed attempt and the successful one. Failed attempts do not actually deduct funds, even though they may appear as a line item.
+3. **Subscription Renewal Overlap**: If you upgraded or changed your subscription plan in the middle of a billing cycle, our system prorates the difference, which can sometimes appear as two separate line items (a partial refund of the old plan and a charge for the new plan) rather than one combined number.
+
+If after reviewing the above, you still believe you were genuinely charged twice for the same exact transaction ID, please escalate to our billing team with your transaction ID and date, as this requires manual verification of payment processor logs before any refund can be issued.
+
+---
+
+ARTICLE: Refund Policy and Processing Timelines
+
+Our standard refund policy is as follows:
+
+- **Eligibility Window**: Refund requests must be submitted within 30 days of the original charge date.
+- **Processing Time**: Once approved, refunds are processed within 5-7 business days. However, your bank or card issuer may take an additional 3-10 business days to reflect the refund on your actual statement, depending on their internal processing schedules.
+- **Partial Billing Cycles**: If you cancel a subscription mid-cycle, we do not provide prorated refunds for the unused portion of that cycle by default; however, you retain full access to paid features until the end of the current billing period.
+- **Refund Method**: Refunds are always issued to the original payment method used for the charge. We are unable to issue refunds to a different card or bank account for security and fraud-prevention reasons.
+
+Refund requests related to suspected unauthorized charges or fraud are handled on an expedited basis and are typically reviewed within 24-48 hours rather than the standard timeline above.
+
+---
+
+ARTICLE: Updating Your Payment Method
+
+To update the card or payment method on file:
+
+1. Navigate to Account Settings > Billing > Payment Methods.
+2. Click "Add New Payment Method" and enter your new card details.
+3. Set the new method as "Default" if you want future charges to use it automatically.
+4. You may remove an old payment method only if it is not currently set as the default; set a new default first, then remove the old one.
+
+If your card was declined during an automatic renewal, we will automatically retry the charge up to 3 times over a 7-day grace period before the subscription is paused. You will receive an email notification before each retry attempt.
+
+---
+
+ARTICLE: Understanding Your Invoice and Tax Breakdown
+
+Each invoice includes a breakdown of the base subscription cost, any add-on charges, applicable taxes (calculated based on your billing address), and any discount or coupon codes applied. Tax rates are determined automatically based on the country and region listed in your billing address at the time of the transaction; this cannot be changed retroactively on past invoices, but can be updated for future invoices by editing your billing address under Account Settings > Billing > Address.
+
+Enterprise customers requiring a formal Purchase Order (PO) number on their invoice, or requiring invoices in a non-standard format for accounting compliance, should contact our billing team directly, as this requires manual invoice generation outside the standard automated system.
+
+---
+
+ARTICLE: Operational Uptime and Billing Dispute Resolution Timelines
+
+We maintain a publicly documented Service Level Agreement (SLA) target of 99.9% uptime for all paid tiers. If a verified outage caused measurable business impact, eligible customers on Business or Enterprise plans may request a service credit, calculated as a percentage of the monthly subscription fee proportional to the downtime duration.
+
+Billing disputes related to SLA credits follow this resolution timeline:
+- Initial review and acknowledgment: within 2 business days of submission.
+- Verification against internal uptime logs: 3-5 business days.
+- Final resolution and credit issuance (if approved): applied to the next billing cycle's invoice, typically within 10 business days of the original dispute submission.
+
+For disputes specifically involving suspected double-charges or unauthorized transactions, please refer to the separate "Refund Policy and Processing Timelines" article, as those follow an expedited 24-48 hour review track instead.

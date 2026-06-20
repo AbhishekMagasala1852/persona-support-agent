@@ -1,2 +1,32 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-*
+# Virtual environment
+venv/
+env/
+.env
+.venv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# ChromaDB files
+chroma_db/
+chroma.sqlite3
+vectorizer.pkl
+
+# Logs
+*.log
